@@ -38,4 +38,8 @@ form?.addEventListener('submit', (e) => {
     });
 });
 dlg.addEventListener('close', () => { lastActive?.focus(); });
+document.getElementById('themeToggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+});
+
 // Esc по умолчанию вызывает событие 'cancel' и закрывает <dialog> 

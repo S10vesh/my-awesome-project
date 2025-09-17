@@ -132,7 +132,7 @@ html {
     outline-offset: 4px;
 }
 a:hover{
-    color:#b00020;
+    color:#1b18cf;
     text-decoration: dotted;
     font-weight:900;
 }
@@ -231,5 +231,26 @@ body.theme-dark {
     background-size: cover;
     background-repeat: no-repeat;
 
+    :root {
+            --background-color: #ffffff;
+            --text-color: #000000;
+        }
+    
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    
+        body.dark-theme {
+            --background-color: #13ce2b;
+            --text-color: #b61616;
+        }
 
+
+}
+
+.Dsa {
+    font-weight: bold;
+    color: green;
 }
